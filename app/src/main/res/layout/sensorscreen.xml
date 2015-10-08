@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.nitishkumar.geofence.SensorActivity"
+    android:background="#ffd71b">
+    <TextView
+        android:paddingTop="20dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Acclerometer Readings "
+        android:backgroundTint="@color/abc_primary_text_material_light"
+        android:backgroundTintMode="screen" />
+    <TableLayout
+        android:paddingTop="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="30dp">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="X-Axis"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+
+                android:text="Y-Axis"
+
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Z-Axis"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_axis"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/y_axis"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/z_axis"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Average Update"
+                android:gravity="center"
+                android:layout_span="3"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avg"
+            android:gravity="center"
+            android:layout_span="3" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
